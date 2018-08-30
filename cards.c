@@ -24,11 +24,11 @@ int main()
     }
     //printf("这张牌的点数是：%i\n", val);
     /* 检查牌的点数是否在3到6之间 */
-    if (card_name >= 3 && card_name <= 6){
+    if (val >= 3 && val <= 6){
         puts("计数增加");
     }
     /* 否则，检查牌是否是10，J，Q */
-    else if{
+    else if(val == 10){
         puts("计数减少");
     }
     return 0;
