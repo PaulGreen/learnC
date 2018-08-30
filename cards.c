@@ -22,7 +22,6 @@ int main()
     }else{
         val = atoi(card_name);
     }
-    //printf("这张牌的点数是：%i\n", val);
     /* 检查牌的点数是否在3到6之间 */
     if (val >= 3 && val <= 6){
         puts("计数增加");
