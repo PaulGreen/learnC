@@ -12,16 +12,16 @@ int main()
     scanf("%2s", card_name);
     int val = 0;
     switch(card_name[0]){
-        default:
-            val = atoi(card_name);
-        case card_name[0] == 'J':
-        case card_name[0] == 'Q':
-        case card_name[0] == 'K':
+        case 'J':
+        case 'Q':
+        case 'K':
             val = 10;
             break;
-        case card_name[0] == 'A':
+        case 'A':
             val = 11;
             break;
+        default:
+            val = atoi(card_name);
     }
     /* 检查牌的点数是否在3到6之间 */
     if (val >= 3 && val <= 6){
