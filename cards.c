@@ -11,16 +11,21 @@ int main()
     puts("输入牌名：");
     scanf("%2s", card_name);
     int val = 0;
-    if (card_name[0] == 'K'){
-        val = 10;
-    }else if (card_name[0] == 'Q'){
-        val=10;
-    }else if (card_name[0] == 'J'){
-        val = 10;
-    }else if (card_name[0] == 'A'){
-        val = 11;
-    }else{
-        val = atoi(card_name);
+    switch(card_name[0]){
+        default:
+            val = atoi(card_name);
+        case card_name[0] == 'J':
+            val = 10;
+            break;
+        case card_name[0] == 'Q':
+            val = 10;
+            break;
+        case card_name[0] == 'K':
+            val = 10;
+            break;
+        case card_name[0] == 'A':
+            val = 10;
+            break;
     }
     /* 检查牌的点数是否在3到6之间 */
     if (val >= 3 && val <= 6){
