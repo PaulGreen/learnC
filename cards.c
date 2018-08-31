@@ -15,16 +15,12 @@ int main()
         default:
             val = atoi(card_name);
         case card_name[0] == 'J':
-            val = 10;
-            break;
         case card_name[0] == 'Q':
-            val = 10;
-            break;
         case card_name[0] == 'K':
             val = 10;
             break;
         case card_name[0] == 'A':
-            val = 10;
+            val = 11;
             break;
     }
     /* 检查牌的点数是否在3到6之间 */
