@@ -11,7 +11,11 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    FILE *in = fopen("spooky.csv", "r");
+    FILE *in;
+    if(!(fopen("spooky.csv", "r"))){
+        fprintf(stderr, "无法打开文件.\n");
+        return 1;
+    }
     FILE *file1 = fopen(argv[2], "w");
     FILE *file2 = fopen(argv[4], "w");
     FILE *file3 = fopen(argv[5], "w");
