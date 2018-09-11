@@ -11,8 +11,8 @@ struct meal{
 };
 
 struct preferences{
-    const char *food;
-    float exercise_hours;
+    struct meal food;
+    struct exercise exercise;
 };
 
 struct fish{
@@ -31,7 +31,7 @@ void catalog(struct fish f)
 int main()
 {
 
-    struct fish snappy = {"Snappy", "Piranha", 69, 4, {"Meat", 7.5}};
+    struct fish snappy = {"Snappy", "Piranha", 69, 4, {{"Meat", 0.2}, {"swim in the jacuzzi", 7.5}}};
 
     catalog(snappy);
     printf("Snappy 喜欢吃 %s", snappy.care.food);
