@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /*********************
     创建链表 island
 **********************/
@@ -9,7 +8,6 @@ typedef struct island{
     char *closes;
     struct island *next;
 } island;
-
 /*****************
     打印链表内容
 ******************/
@@ -22,8 +20,7 @@ void display(island *start){
 
 }
 
-int main()
-{
+int main(){
     island amity = {"Amity", "09:00", "17:00", NULL};   //初始化链表
     island craggy = {"Craggy", "09:00", "17:00", NULL};
     island isla_nublar = {"Isla Nublar", "09:00", "17:00", NULL};
